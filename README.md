@@ -11,7 +11,7 @@ This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
 # On macOS / Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# On Windows
+# On Windows (untested)
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
@@ -33,13 +33,8 @@ To install in an existing project as a dependency:
 uv add doe_jog_heart_exp
 ```
 
-### Dependencies
-
-- [numpy](https://numpy.org/) >= 1.26.0
-
 ## Usage
 
-```python
-import doe_jog_heart_exp
-import numpy as np
+```bash
+uv run main.py
 ```
